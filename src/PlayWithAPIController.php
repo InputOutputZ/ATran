@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use AzureTran;
 
-class AzureTranController extends Controller
+class PlayWithAPIController 
 {
   public function detectText(Request $request){
         $result = AzureTran::detectTextInformation($request->text);

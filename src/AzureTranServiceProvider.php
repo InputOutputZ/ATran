@@ -30,8 +30,6 @@ class AzureTranServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/config/azure.php', 'azuretranslate'
         );
-        
-        $this->app->make('AzureTran\Translate\AzureTranController.php');
 
         $this->app->singleton('azuretranslate', function ($app) {
             return new AzureTran(
@@ -43,6 +41,8 @@ class AzureTranServiceProvider extends ServiceProvider
                 $app['config']['azure.languagepath']
             );
         });
+
+        $this->app->make('\AzureTran\Translate\PlayWithAPIController');
     }
 
     public function provides()

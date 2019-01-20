@@ -1,12 +1,13 @@
 {
     "name": "azuretran/translate",
-    "description": "Making microsoft translate api version 3 consumption easier in laravel",
-    "keywords": ["log","logging"],
+    "description": "Making Microsoft translator API version 3 consumption easier in Laravel 5.7+",
+    "keywords": ["azure","translate","translator","api","version3","3","easier","laravel","Cognitive","Services","transliterate","translation","language","languages"],
     "homepage": "https://github.com/princezuk/AzureTran",
     "type": "library",
     "license": "MIT",
     "require": {
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "tebru/gson-php": "^0.6.2"
     },
     "authors": [
         {

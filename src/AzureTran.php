@@ -1,6 +1,6 @@
 <?php
 
-namespace  AzureTran\Translate;
+namespace AzureTran\Translate;
 
 use Symfony\Component\HttpFoundation\Request;
 use GuzzleHttp\Client;

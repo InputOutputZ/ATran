@@ -17,6 +17,7 @@ class AzureTranServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([__DIR__.'/config/azure.php' => config_path('azure.php')]);
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
     }
 
     /**
@@ -30,6 +31,8 @@ class AzureTranServiceProvider extends ServiceProvider
             __DIR__.'/config/azure.php', 'azuretranslate'
         );
         
+        $this->app->make('AzureTran\Translate\AzureTranController.php');
+
         $this->app->singleton('azuretranslate', function ($app) {
             return new AzureTran(
                 $app['config']['azure.key'],

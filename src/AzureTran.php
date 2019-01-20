@@ -57,10 +57,10 @@ class AzureTran extends AzureTranHelpers{
 	    $responseBody = $response->getBody();
 	    $decodedBodyJson = json_decode($responseBody, JSON_UNESCAPED_UNICODE);
 	    $encodedBodyJson = json_encode($decodedBodyJson[0], JSON_UNESCAPED_UNICODE);
-
 		$gson = Gson::builder()->build();
 	    $detectObject = $gson->fromJson($encodedBodyJson, Detect::class);
-	    
+	    $detectObject->isTranslationSupported = $decodedBodyJson[0]['isTranslationSupported'];
+	    $detectObject->isTransliterationSupported = $decodedBodyJson[0]['isTransliterationSupported'];
 	    return $detectObject;
 	}
 

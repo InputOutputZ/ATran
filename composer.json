@@ -2,7 +2,7 @@
     "name": "azuretran/translate",
     "description": "Making microsoft translate api version 3 consumption easier in laravel",
     "keywords": ["log","logging"],
-    "homepage": "https://github.com/Seldaek/monolog",
+    "homepage": "https://github.com/princezuk/AzureTran",
     "type": "library",
     "license": "MIT",
     "require": {

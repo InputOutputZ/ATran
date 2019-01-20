@@ -74,6 +74,103 @@ AZURETRAN_KEY=Azure Cognitive Services API SUBSCRIPTION KEY
 
 - 5- Well Done!
 
+# Demo with PlayWithAPIController and Postman
+
+## Configuration
+
+- Codebase Configuration
+
+-1 Go To PlayWithAPIController
+
+-2 Go to definition of detectTextInformation and transliterationsAvailable.
+
+-3 Examine the functions
+
+- detectTextInformation | Postman Configuration to route "http://yourwebsite.com/detecttext" and POST type.
+
+-1 Include following headers:-
+
+```php
+Accept: application/json
+```
+
+2- Include following Body: form-data
+
+```php
+KEY     TEXT
+text    Hello
+```
+
+3- Response
+
+```php
+{
+    "language": "en",
+    "score": 1,
+    "isTranslationSupported": true,
+    "isTransliterationSupported": false,
+    "alternatives": [
+        {
+            "language": "de",
+            "score": 1,
+            "isTranslationSupported": true,
+            "isTransliterationSupported": false
+        },
+        {
+            "language": "fr",
+            "score": 1,
+            "isTranslationSupported": true,
+            "isTransliterationSupported": false
+        }
+    ]
+}
+```
+
+- transliterationsAvailable | Postman Configuration to route "http://yourwebsite.com/transliterationavailable" and POST type.
+
+-1 Include following headers:-
+
+```php
+Accept: application/json
+```
+
+2- Response
+
+```php
+{
+    "ar": {
+        "name": "Arabic",
+        "nativeName": "العربية",
+        "scripts": [
+            {
+                "code": "Arab",
+                "name": "Arabic",
+                "nativeName": "العربية",
+                "dir": "rtl",
+                "toScripts": [
+                    {
+                        "code": "Latn",
+                        "name": "Latin",
+                        "nativeName": "اللاتينية",
+                        "dir": "ltr"
+                    }
+                ]
+            },
+            {
+                "code": "Latn",
+                "name": "Latin",
+                "nativeName": "اللاتينية",
+                "dir": "ltr",
+                "toScripts": [
+                    {
+                        "code": "Arab",
+                        "name": "Arabic",
+                        "nativeName": "العربية",
+                        "dir": "rtl"
+                    }
+                ].............
+```
+
 # Usage
 
 ### Import Use at the top in any of your laravel project controllers

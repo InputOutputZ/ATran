@@ -87,7 +87,7 @@ use AzureTran;
 AzureTran::detectTextInformation($text);
 ```
 
-##Available functions
+## Available functions
 
 - detectTextInformation($text) (Returns Detect:Class object)
 - transliterateTextInformation($text,$language,$fromscript,$toscript) (Returns Transliterate:Class object)

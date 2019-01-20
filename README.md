@@ -16,7 +16,7 @@ There are 3 files to have a look at so to understand how the integration works
 - routes.php (Configuring PlayWithAPIController routes)
 - AzureTran\Translate\PlayWithAPIController (All Controller with onhand method plaing with the API endpoints)
 
-# Required Packages
+### Required Packages
 
 ```php
         "guzzlehttp/guzzle": "^6.3",

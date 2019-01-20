@@ -1,0 +1,34 @@
+{
+    "name": "azuretran/translate",
+    "description": "Making microsoft translate api version 3 consumption easier in laravel",
+    "keywords": ["log","logging"],
+    "homepage": "https://github.com/Seldaek/monolog",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "authors": [
+        {
+            "name": "Zakaria Abushima",
+            "email": "hello@princez.uk",
+            "homepage": "http://princez.uk/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "AzureTran\\Translate\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AzureTran\\Translate\\AzureTranServiceProvider"
+            ],
+            "aliases": {
+                "AzureTran": "AzureTran\\Translate\\Facades\\AzureTran"
+            }
+        }
+    }
+}

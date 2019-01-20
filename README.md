@@ -46,7 +46,8 @@ AZURETRAN_KEY=Azure Cognitive Services API SUBSCRIPTION KEY
 
 - 5- Well Done!
 
-# Installation for Laravel 4
+# Installation for older Laravel 
+## Please expect more digging to get it work if you are planning to go down to 4.
 
 - 1- Go to your laravel project root directory and get the package locally:-
 ```php

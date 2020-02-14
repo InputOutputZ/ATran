@@ -195,6 +195,6 @@ AzureTran::detectTextInformation($text);
 
 ## About
 
-The AzureTran package was published under MIT licence. If you have any problems, please feel free to reach out on hello@princez.uk.
+The AzureTran package was published under MIT licence. If you have any problems, please feel free to reach out at hello@princez.uk.
 
 Goodbye.

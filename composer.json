@@ -6,7 +6,7 @@
     "type": "library",
     "license": "MIT",
     "require": {
-        "guzzlehttp/guzzle": "^7.0",
+        "guzzlehttp/guzzle": "^7.0.1",
         "tebru/gson-php": "^0.7.3"
     },
     "authors": [

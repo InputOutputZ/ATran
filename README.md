@@ -19,8 +19,8 @@ There are 3 files to have a look at so to understand how the integration works
 ### Required Packages
 
 ```php
-"guzzlehttp/guzzle": "^6.3",
-"tebru/gson-php": "^0.6.2"
+"guzzlehttp/guzzle": "^7.0.1",
+"tebru/gson-php": "^0.7.3"
 ```
 
 # Installation for Laravel 5.7+

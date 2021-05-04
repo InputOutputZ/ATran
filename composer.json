@@ -1,34 +1,34 @@
 {
-    "name": "azuretran/translate",
-    "description": "Making Microsoft translator API version 3 consumption easier in Laravel 5.7+",
+    "name": "atran/translate",
+    "description": "Making Microsoft translator API version 3 consumption easier in Laravel 5+.",
     "keywords": ["azure","translate","translator","api","version3","3","easier","laravel","Cognitive","Services","transliterate","translation","language","languages"],
-    "homepage": "https://github.com/princezuk/AzureTran",
+    "homepage": "https://github.com/InputOutputZ/ATran",
     "type": "library",
-    "license": "MIT",
+    "license": "Unlicense",
     "require": {
         "guzzlehttp/guzzle": "^7.0.1",
-        "tebru/gson-php": "^0.7.3"
+        "tebru/gson-php": "^0.7.4"
     },
     "authors": [
         {
-            "name": "Zakaria Abushima",
-            "email": "hello@princez.uk",
-            "homepage": "http://princez.uk/"
+            "name": "Zakaria",
+            "email": "hi@zakaria.website",
+            "homepage": "https://zakaria.website"
         }
     ],
     "autoload": {
         "psr-4": {
-            "AzureTran\\Translate\\": "src/"
+            "ATran\\Translate\\": "src/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "AzureTran\\Translate\\AzureTranServiceProvider"
+                "ATran\\Translate\\ATranServiceProvider"
             ],
             "aliases": {
-                "AzureTran": "AzureTran\\Translate\\Facades\\AzureTran"
+                "ATran": "ATran\\Translate\\Facades\\ATran"
             }
         }
     }

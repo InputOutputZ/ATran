@@ -1,11 +1,11 @@
 <?php
 
 
-namespace  AzureTran\Translate\Entities;
+namespace  ATran\Translate\Entities;
 
-use AzureTran\Translate\Entities\AzureTranHelpers;
+use ATran\Translate\Entities\ATranHelpers;
 
-class DetectedLanguage extends AzureTranHelpers {
+class DetectedLanguage extends ATranHelpers {
 
 	public $language;
 	public $score;

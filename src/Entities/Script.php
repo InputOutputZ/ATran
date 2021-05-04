@@ -1,9 +1,9 @@
 <?php
 
 
-namespace  AzureTran\Translate\Entities;
+namespace  ATran\Translate\Entities;
 
-use AzureTran\Translate\Entities\ToScript;
+use ATran\Translate\Entities\ToScript;
 
 class Script {
 

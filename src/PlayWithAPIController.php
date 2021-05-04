@@ -1,15 +1,15 @@
 <?php
 
-namespace AzureTran\Translate;
+namespace ATran\Translate;
 
 use Illuminate\Http\Request;
 
-use AzureTran;
+use ATran;
 
 class PlayWithAPIController 
 {
   public function detectText(Request $request){
-        $result = AzureTran::detectTextInformation($request->text);
+        $result = ATran::detectTextInformation($request->text);
         if (($request->ajax() && !$request->pjax()) || $request->wantsJson() || $request->js) {
             return response()->json($result,200);
         } else {
@@ -18,7 +18,7 @@ class PlayWithAPIController
     }
 
   public function transliterateText(Request $request){
-        $result = AzureTran::transliterateTextInformation($request->text,$request->language,$request->fromScript,$request->toScript);
+        $result = ATran::transliterateTextInformation($request->text,$request->language,$request->fromScript,$request->toScript);
         if (($request->ajax() && !$request->pjax()) || $request->wantsJson() || $request->js) {
             return response()->json($result,200);
         } else {
@@ -27,7 +27,7 @@ class PlayWithAPIController
     }
 
     public function translateText(Request $request){
-        $result = AzureTran::translateText($request->text,$request->to);
+        $result = ATran::translateText($request->text,$request->to);
         if (($request->ajax() && !$request->pjax()) || $request->wantsJson() || $request->js) {
             return response()->json($result,200);
         } else {
@@ -36,7 +36,7 @@ class PlayWithAPIController
     }
 
     public function transliterationsAvailable(Request $request){
-        $result = AzureTran::transliterationsAvailable();
+        $result = ATran::transliterationsAvailable();
         if (($request->ajax() && !$request->pjax()) || $request->wantsJson() || $request->js) {
             return response()->json($result,200);
         } else {
@@ -45,7 +45,7 @@ class PlayWithAPIController
     }
 
     public function translationAvailable(Request $request){
-        $result = AzureTran::translationsAvailable();
+        $result = ATran::translationsAvailable();
         if (($request->ajax() && !$request->pjax()) || $request->wantsJson() || $request->js) {
             return response()->json($result,200);
         } else {

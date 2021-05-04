@@ -1,7 +1,7 @@
 <?php
 
-Route::post('detecttext', '\AzureTran\Translate\PlayWithAPIController@detectText');
-Route::post('transliteratetext', '\AzureTran\Translate\PlayWithAPIController@transliterateText');
-Route::post('translatetext', '\AzureTran\Translate\PlayWithAPIController@translateText');
-Route::get('transliterationavailable', '\AzureTran\Translate\PlayWithAPIController@transliterationsAvailable');
-Route::get('translationavailable', '\AzureTran\Translate\PlayWithAPIController@translationAvailable');
+Route::post('detecttext', '\ATran\Translate\PlayWithAPIController@detectText');
+Route::post('transliteratetext', '\ATran\Translate\PlayWithAPIController@transliterateText');
+Route::post('translatetext', '\ATran\Translate\PlayWithAPIController@translateText');
+Route::get('transliterationavailable', '\ATran\Translate\PlayWithAPIController@transliterationsAvailable');
+Route::get('translationavailable', '\ATran\Translate\PlayWithAPIController@translationAvailable');

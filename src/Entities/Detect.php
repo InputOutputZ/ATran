@@ -1,9 +1,9 @@
 <?php
 
 
-namespace  AzureTran\Translate\Entities;
+namespace  ATran\Translate\Entities;
 
-use AzureTran\Translate\Entities\Alternative;
+use ATran\Translate\Entities\Alternative;
 
 class Detect {
 

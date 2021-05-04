@@ -1,10 +1,10 @@
 <?php
 
 
-namespace  AzureTran\Translate\Entities;
+namespace  ATran\Translate\Entities;
 
-use AzureTran\Translate\Entities\DetectedLanguage;
-use AzureTran\Translate\Entities\Translation;
+use ATran\Translate\Entities\DetectedLanguage;
+use ATran\Translate\Entities\Translation;
 
 class Translations {
 

@@ -1,9 +1,9 @@
 <?php
 
 
-namespace  AzureTran\Translate\Entities;
+namespace  ATran\Translate\Entities;
 
-use AzureTran\Translate\Entities\Script;
+use ATran\Translate\Entities\Script;
 
 class Transliteration {
 
